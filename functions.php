@@ -82,3 +82,12 @@ function production_stylesheet($public_query_vars) {
 function st_navbar() {
 	return;
 }
+
+function st_footer() {
+    //loads sidebar-footer.php
+    get_sidebar( 'footer' );
+    // prints site credits
+    echo '<div id="credits">';
+    echo of_get_option('footer_text');
+    echo '</div>';
+}
