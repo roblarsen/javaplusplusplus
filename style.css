@@ -86,7 +86,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    vertical-align: baseline; }
+    vertical-align: middle; }
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
   body {
@@ -136,12 +136,10 @@ body {
 
 #header {
   clear: both;
-  margin-top: 16px;
 }
 
 #header .inner {
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom:5px;
 }
 
 #header .header_extras {
@@ -150,7 +148,7 @@ body {
 
 /* Give the main wrapper a separate background color */
 
-#wrap { background:#fff; border-right:10px solid #999;border-left:10px solid #999;}
+#wrap { background:#fff; border-right:5px solid #999;border-left:5px solid #999;border-bottom:50px solid #999;}
 
 /* Footer Styles */
 
@@ -163,7 +161,7 @@ body {
   padding-top: 0;
 }
 
-#footer #credits {
+#footer small {
   font-size: 11px;
   color: #ccc;
 }
@@ -175,22 +173,22 @@ body {
 #site-title {
   margin: 0;
   padding: 0;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 55px;
-  letter-spacing: -1px;
 }
 
 #header div#site-title a,
 #header h1#site-title,
 #header h1#site-title a {
-color: #404040;
+color: rgb(245, 0, 255);
 font-family:MichromaRegular;
 text-transform : uppercase;
   margin: 0;
   padding: 0;
-  line-height: 55px;
+  
+line-height: 56px;
   text-decoration: none;
-  letter-spacing: -2px;
+  letter-spacing: 20px;
 float:left;
 }
 
@@ -204,13 +202,15 @@ color: #404040;
 /* Header Tagline */
 
 #header span.site-desc {
-  font-family: BPReplayItalic;
-margin: 0 0 0 20px;;
+  font-family: BPReplayBold;
+margin: 0;
 text-transform :uppercase;
   font-size: 36px;
-  line-height: 55px;
-  color: #FF00DC;
+  line-height: 43px;
+  color: #ccc;
   letter-spacing: -1px;
+  position:relative;
+  top:12px;
 }
 
 /* Image Header */
@@ -689,9 +689,14 @@ li.menu-item a:hover {
 
 a.more-link {
   display: block;
-
+  font-family:MichromaRegular;
+text-decoration:none;
 }
-
+a.more-link .meta-nav{
+ position:relative;
+ top:-4px;
+ font-size:25px;
+ }
 .st_relatedposts h4 {
   border-bottom: 1px solid #ebebeb;
 }
@@ -1160,11 +1165,20 @@ body.page-template-onecolumn-page-php #comments .commentlist li .comment-meta {}
 
 #nav-below {
   width: 100%;
+  font-family: MichromaRegular;
+  text-transform : uppercase;
+}
+#nav-below a {
+  text-decoration:none;
 }
 
+#nav-below .meta-nav {
+position:relative;
+top:-6px;
+font-size:24px;
+}
 #nav-below .nav-previous a {
   float: left;
-  
 }
 #nav-below .nav-next a {
   float: right;

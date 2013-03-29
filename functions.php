@@ -82,12 +82,24 @@ function production_stylesheet($public_query_vars) {
 function st_navbar() {
 	return;
 }
-
+    function st_before_footer() {
+      $footerwidgets = is_active_sidebar('first-footer-widget-area') + is_active_sidebar('second-footer-widget-area') + is_active_sidebar('third-footer-widget-area') + is_active_sidebar('fourth-footer-widget-area');
+      $class = ($footerwidgets == '0' ? 'noborder' : 'normal');
+      echo '<div class="clear"></div><footer id="footer" class="'.$class.' sixteen columns">';
+    }
 function st_footer() {
     //loads sidebar-footer.php
     get_sidebar( 'footer' );
     // prints site credits
     echo '<div id="credits">';
-    echo of_get_option('footer_text');
+    echo '<small>&copy; Rob Larsen</small>';
     echo '</div>';
 }
+   function st_after_footer() {
+      echo "</footer><!--/#footer-->"."\n";
+      echo "</div><!--/#wrap.container-->"."\n";
+      // Google Analytics
+      if (of_get_option('footer_scripts') <> "" ) {
+        echo '<script type="text/javascript">'.stripslashes(of_get_option('footer_scripts')).'</script>';
+      }
+    }
