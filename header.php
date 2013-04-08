@@ -80,11 +80,9 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="wrap" class="container">
-	<div class="resize"></div>
 	<?php
 	st_above_header();
 	st_header();
 	st_below_header();
 	?>
-	<?php st_navbar(); ?>
         <div class="row sixteen columns"><img class="scale-with-grid round" id="jppp_header" alt="" /></div>

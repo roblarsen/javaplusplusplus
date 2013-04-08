@@ -1,18 +1,18 @@
 /*
-Theme Name: Skeleton Child Theme
-Theme URI: http://www.simplethemes.com
-Description: A simple WordPress theme based on the Skeleton RWD framework
-Version: 1.6
-Author: Simple Themes
-Author URI: http://www.simplethemes.com
+Theme Name: Java+++
+Theme URI: http://javaplusplusplus.com
+Description: A custom WordPress theme based on the Skeleton RWD framework
+Version: 1.0
+Author: Rob Larsen
+Author URI: http://www.drunkenfist.com
 Template: skeleton
-License: GPL
-License URI: http://www.opensource.org/licenses/gpl-license.php
+License: MIT
 */
 
 
 /* Table of Contents
 ==================================================
+  #Fonts
   #Global Reset
   #Structural Customization
   #Header
@@ -31,7 +31,7 @@ License URI: http://www.opensource.org/licenses/gpl-license.php
   #Misc
 */
 
-/* @group Global Reset */
+/* @group Fonts */
 @font-face {
     font-family: 'BPreplay';
     src: url('fonts/BPreplay-webfont.eot');
@@ -81,7 +81,7 @@ License URI: http://www.opensource.org/licenses/gpl-license.php
 
 }
 
-
+/* @group Global Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -129,14 +129,12 @@ body {
 
 /* @end */
 
-
-
 /* @group Structural Customization */
 
 
 #header {
   clear: both;
-}
+  }
 
 #header .inner {
   padding-bottom:5px;
@@ -148,7 +146,7 @@ body {
 
 /* Give the main wrapper a separate background color */
 
-#wrap { background:#fff; border-right:5px solid #999;border-left:5px solid #999;border-bottom:50px solid #999;}
+#wrap { background:#efefef; border-right:5px solid #999;border-left:5px solid #999;border-bottom:50px solid #999;}
 
 /* Footer Styles */
 
@@ -175,6 +173,7 @@ body {
   padding: 0;
   font-size: 50px;
   line-height: 55px;
+  
 }
 
 #header div#site-title a,
@@ -203,14 +202,17 @@ color: #404040;
 
 #header span.site-desc {
   font-family: BPReplayBold;
-margin: 0;
-text-transform :uppercase;
+  margin: 0;
+  text-transform :uppercase;
   font-size: 36px;
   line-height: 43px;
   color: #ccc;
-  letter-spacing: -1px;
+  letter-spacing: 9px;
   position:relative;
   top:12px;
+  left: 12px;
+  text-align : justify;
+
 }
 
 /* Image Header */
@@ -338,8 +340,7 @@ text-transform :uppercase;
 /* @group Typography */
  
   h2 , h3, h4, h5 { 
-
-font-family: MichromaRegular
+    font-family: MichromaRegular
   }
   
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -370,7 +371,10 @@ font-family: MichromaRegular
   .subheader { color: #777; }
   .normal {font-weight: normal;}
   .bolder {font-weight: bolder;}
-  
+  .entry-content p img {
+    border:1px solid #666;  
+  }
+
   p { margin: 0 0 20px 0; }
   p img { margin: 0; }
   p.lead { font-size: 21px; line-height: 27px; color: #777;  }
@@ -536,6 +540,15 @@ table td {
 
 input#searchsubmit {
   margin-bottom: 0;
+  border: 1px solid #555; 
+  background : rgb(245, 0, 255);
+  color: #fff;
+  height:30px;
+  -webkit-border-radius : 0;
+  -moz-border-radius:0;
+  border-radius :0;
+  text-shadow : none;
+  text-transform: uppercase;
 }
 
 .widget-container a:link,
@@ -607,6 +620,24 @@ input#searchsubmit {
 .widget_rss .widget-title img {
   width: 11px;
   height: 11px;
+}
+
+.site-description {
+    text-align:justify;
+    text-transform :uppercase;
+    font-size:85%;
+    padding:20px 30px 20px 60px;
+    background :#555;
+    color:#fff;
+}
+.site-description .site-title {
+    color:rgb(245, 0, 255);
+    font-family:MichromaRegular;
+    letter-spacing : 8px
+}
+.site-description .me {
+    color:#fff;
+    font-family:bpreplay;
 }
 
 /* Indent Sidebar Lists */
@@ -1224,6 +1255,36 @@ img.scale-with-grid {
   }
   
   input[type="checkbox"] {display: inline; }
+
+/* related links */
+#related-links {
+    overflow:auto;
+    background:#fff;
+    padding:10px;
+    border:1px solid #555;
+}
+#related-links .links .contact{
+    background:url(http://d1eucpngoftcha.cloudfront.net/_assets/styles/images/links.png) no-repeat 0 3px;
+    font-size:90%;
+    line-height:1.3;
+    padding-left:22px;
+    width : 140px;
+    float:left;
+ 
+}
+
+#related-links .links .email{background:url(http://d1eucpngoftcha.cloudfront.net/_assets/styles/images/links.png) no-repeat -200px;}
+
+#related-links .links .contact a{color:#036;text-decoration:none;}
+#related-links .links .contact a:hover{text-decoration:underline;}
+#related-links .links .contact.email{background-position:0 -212px;font-weight:bold;text-transform:uppercase;}
+#related-links .links .contact.comics{background-position:0 -189px; width:300px;}
+#related-links .links .contact.facebook{background-position:0 -70px;}
+#related-links .links .contact.flickr{background-position:0 -117px;}
+#related-links .links .contact.linkedin{background-position:0 -142px;}
+#related-links .links .contact.twitter{background-position:0 -166px;}
+#related-links .links .contact.htmlcssjs{background-position:0 -232px; width:300px;}
+#related-links .links .contact.lastfm{background-position:0 -45px;}#related-links .links .contact.vimeo{background-position:0 -256px;}#related-links .links .contact.delicious{background-position:0 -21px;}
 
 /* # Misc Typography Balancing to Maintain Vertical Rhythm
 ============================================================== */
