@@ -525,7 +525,7 @@ table td {
 }
 
 .widget-container {
-  margin: 0 0 28px 0;
+  margin: 0 0 0px 0;
   padding-top: 1px;
 }
 
@@ -646,6 +646,73 @@ input#searchsubmit {
   border: none;
   margin-left: 1.3em;
   padding: 0;
+}
+/* related links */
+#related-links {
+    overflow:auto;
+    background:#fff;
+    padding:10px;
+    border:1px solid #555;
+}
+#related-links .links .contact{
+    background:url(http://d1eucpngoftcha.cloudfront.net/_assets/styles/images/links.png) no-repeat 0 3px;
+    font-size:90%;
+    line-height:1.3;
+    padding-left:22px;
+    width : 140px;
+    float:left;
+ 
+}
+
+#related-links .links .email{background:url(http://d1eucpngoftcha.cloudfront.net/_assets/styles/images/links.png) no-repeat -200px;}
+
+#related-links .links .contact a{color:#036;text-decoration:none;}
+#related-links .links .contact a:hover{text-decoration:underline;}
+#related-links .links .contact.email{background-position:0 -212px;font-weight:bold;text-transform:uppercase;}
+#related-links .links .contact.comics{background-position:0 -189px; width:300px;}
+#related-links .links .contact.dfst{width:300px;}
+#related-links .links .contact.gplus{background:none; padding-left:0}
+#related-links .links .contact.gplus:before{content:"+"; background:red;color:white;font-weight:bold; width:16px; margin-right:10px; display:inline-block;text-align:center;}
+#related-links .links .contact.facebook{background-position:0 -70px;}
+#related-links .links .contact.flickr{background-position:0 -117px;}
+#related-links .links .contact.linkedin{background-position:0 -142px;}
+#related-links .links .contact.twitter{background-position:0 -166px;}
+#related-links .links .contact.htmlcssjs{background-position:0 -232px; width:300px;}
+#related-links .links .contact.lastfm{background-position:0 -45px;}#related-links .links .contact.vimeo{background-position:0 -256px;}#related-links .links .contact.delicious{background-position:0 -21px;}
+.widget_container {
+    margin:0;    
+}
+.widget_search{
+    padding-bottom:10px;
+}
+.widget_recent_entries, .widget_categories {
+    color:white;
+    background:#555;
+    padding:20px 30px 20px 60px;
+
+}
+ .widget_categories{
+     overflow:auto;
+ }
+ .widget_categories li {
+     float:left;
+     padding:2px 8px 2px 0px;
+     text-transform:uppercase; line-height:1.2
+ }
+ .widget_categories li:before {
+     content : "★";
+     color: rgb(245,0,255);
+     margin-right: 4px
+ } 
+ .widget_categories a, .widget_recent_entries a {
+    color:white;
+}
+
+.widget_archive{
+    background:#fff;
+    border:1px solid #555;
+       padding:10px;
+
 }
 
 /* Page Menus/Custom Menus */
@@ -1255,36 +1322,6 @@ img.scale-with-grid {
   }
   
   input[type="checkbox"] {display: inline; }
-
-/* related links */
-#related-links {
-    overflow:auto;
-    background:#fff;
-    padding:10px;
-    border:1px solid #555;
-}
-#related-links .links .contact{
-    background:url(http://d1eucpngoftcha.cloudfront.net/_assets/styles/images/links.png) no-repeat 0 3px;
-    font-size:90%;
-    line-height:1.3;
-    padding-left:22px;
-    width : 140px;
-    float:left;
- 
-}
-
-#related-links .links .email{background:url(http://d1eucpngoftcha.cloudfront.net/_assets/styles/images/links.png) no-repeat -200px;}
-
-#related-links .links .contact a{color:#036;text-decoration:none;}
-#related-links .links .contact a:hover{text-decoration:underline;}
-#related-links .links .contact.email{background-position:0 -212px;font-weight:bold;text-transform:uppercase;}
-#related-links .links .contact.comics{background-position:0 -189px; width:300px;}
-#related-links .links .contact.facebook{background-position:0 -70px;}
-#related-links .links .contact.flickr{background-position:0 -117px;}
-#related-links .links .contact.linkedin{background-position:0 -142px;}
-#related-links .links .contact.twitter{background-position:0 -166px;}
-#related-links .links .contact.htmlcssjs{background-position:0 -232px; width:300px;}
-#related-links .links .contact.lastfm{background-position:0 -45px;}#related-links .links .contact.vimeo{background-position:0 -256px;}#related-links .links .contact.delicious{background-position:0 -21px;}
 
 /* # Misc Typography Balancing to Maintain Vertical Rhythm
 ============================================================== */
