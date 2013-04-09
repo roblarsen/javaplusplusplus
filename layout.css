@@ -243,10 +243,10 @@ border-bottom: 1px solid #d6d6d6;
 padding-right : 5px;
 padding-left : 5px;
 }
- .post h1 {font-size:24px;}
-  .post h2 {font-size:20px; }
- .post h3 { font-size:16px}
-.post  h4 {font-size:15px; }
+ .post h1 {font-size:28px;}
+  .post h2 {font-size:24px; }
+ .post h3 { font-size:18px}
+.post  h4 {font-size:16px; }
 .post  h5 {font-size:14px}
 	}
 	@media only screen and (max-width: 480px){

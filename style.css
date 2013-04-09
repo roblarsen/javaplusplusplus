@@ -85,8 +85,7 @@ License: MIT
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
-    border: 0;
-    vertical-align: middle; }
+    border: 0; }
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; }
   body {
@@ -340,7 +339,7 @@ color: #404040;
 /* @group Typography */
  
   .post h1, h2 , h3, h4, h5 { 
-    font-family: MichromaRegular
+    font-family: BPreplay;
   }
   
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -349,6 +348,9 @@ color: #404040;
   }
   
   
+.post dt {
+  font-weight:bold;
+}
   
   h1 {line-height: 140%; margin-bottom: 14px;}
   h2 {line-height: 130%; margin-bottom: 10px; }
@@ -784,7 +786,7 @@ li.menu-item a:hover {
 
 a.more-link {
   display: block;
-  font-family:MichromaRegular;
+  font-family:BPreplay;
 text-decoration:none;
 }
 a.more-link .meta-nav{
@@ -1163,7 +1165,7 @@ p.trigger.active a {
 body.dark #comments {background: url(images/dark/divider.png) repeat-x right top;}
 
 #comments h2, #respond h2 {vertical-align:top; font-size: 1em;display: block;border-bottom: 1px solid #d6d6d6;font-weight: bold;font-family:Verdana,Geneva,'DejaVu Sans',sans-serif; }
-#comments h6 {font-family: "Times New Roman", Times, serif;letter-spacing: normal;text-transform: uppercase;margin: 10px 0px;}
+#comments h6 {font-family: Verdana,Geneva,'DejaVu Sans',sans-serif;letter-spacing: normal;text-transform: uppercase;margin: 10px 0px;}
 #comments h6 a {vertical-align:top;}
 
 #comments .comment-meta { margin:0px 0px 20px 0px; display:block;}
@@ -1201,14 +1203,6 @@ body.page-template-onecolumn-page-php #comments .commentlist li .comment-meta {}
   padding: 2px;
   background:#f4f4f4;
 }
-
-#comments .vcard {
-  background:url(images/light/comment_author_bg.png) no-repeat top right;
-}
-#comments body.dark .vcard {
-  background:url(images/dark/comment_author_bg.png) no-repeat top right;
-}
-
 
 /* @end */
 
@@ -1260,7 +1254,7 @@ body.page-template-onecolumn-page-php #comments .commentlist li .comment-meta {}
 
 #nav-below {
   width: auto;
-  font-family: MichromaRegular;
+  font-family: BPreplay;
   text-transform : uppercase;
   font-size:12px;
   overflow:auto;
@@ -1273,7 +1267,6 @@ body.page-template-onecolumn-page-php #comments .commentlist li .comment-meta {}
 
 #nav-below .meta-nav {
 position:relative;
-top:-6px;
 font-size:24px;
 }
 #nav-below .nav-previous a {
