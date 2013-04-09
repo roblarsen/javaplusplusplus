@@ -49,8 +49,8 @@
 <?php /* How to display posts of the Gallery format. The gallery category is the old way. */ ?>
 
 	<?php if ( ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ) || in_category( _x( 'gallery', 'gallery category slug', 'skeleton' ) ) ) : ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'skeleton' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'skeleton' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 			<div class="entry-meta">
 				<?php skeleton_posted_on(); ?>
@@ -90,12 +90,12 @@
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'skeleton' ), __( '1 Comment', 'skeleton' ), __( '% Comments', 'skeleton' ) ); ?></span>
 				<?php edit_post_link( __( 'Edit', 'skeleton' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
-		</div><!-- #post-## -->
+		</article><!-- #post-## -->
 
 <?php /* How to display posts of the Aside format. The asides category is the old way. */ ?>
 
 	<?php elseif ( ( function_exists( 'get_post_format' ) && 'aside' == get_post_format( $post->ID ) ) || in_category( _x( 'asides', 'asides category slug', 'skeleton' ) )  ) : ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 		<?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
 			<div class="entry-summary">
@@ -114,13 +114,13 @@
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'skeleton' ), __( '1 Comment', 'skeleton' ), __( '% Comments', 'skeleton' ) ); ?></span>
 				<?php edit_post_link( __( 'Edit', 'skeleton' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
-		</div><!-- #post-## -->
+		</article><!-- #post-## -->
 
 <?php /* How to display all other posts. */ ?>
 
 	<?php else : ?>
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'skeleton' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'skeleton' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 			<div class="entry-meta">
 				<?php skeleton_posted_on(); ?>
@@ -157,7 +157,7 @@
 				<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'skeleton' ), __( '1 Comment', 'skeleton' ), __( '% Comments', 'skeleton' ) ); ?></span>
 				<?php edit_post_link( __( 'Edit', 'skeleton' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
 			</div><!-- .entry-utility -->
-		</div><!-- #post-## -->
+		</article><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
 
