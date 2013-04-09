@@ -92,12 +92,11 @@ font-size:26px;
 letter-spacing:10px;
 line-height:24px;
 vertical-align:top;
-float:none;
 }
 #header .site-desc.text {
-top:16px;
+top: 2px;
 font-size:24px;
-letter-spacing:4px;
+letter-spacing: 7px;
 line-height:24px;
 }
 .site-description {
@@ -258,6 +257,9 @@ font-size:20px;
 font-size:12px;
 letter-spacing:4px;
 
+}
+#related-links {
+	overflow: hidden;
 }
 	}
 	
