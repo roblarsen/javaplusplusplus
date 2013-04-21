@@ -648,7 +648,7 @@ input#searchsubmit {
 }
 /* related links */
 #related-links {
-    overflow:auto;
+    overflow:hidden;
     background:#fff;
     padding:10px;
     border:1px solid #555;
