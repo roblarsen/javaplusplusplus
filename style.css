@@ -716,6 +716,17 @@ input#searchsubmit {
     line-height: 1.5;
     font-size: 90%;
 }
+#text-4 {
+  background:#fff;
+  border:1px solid #555;
+  padding:10px;
+  line-height: 1.5;
+  font-size: 90%;
+}
+#text-4 span {
+  color: rgb(245,0,255);
+  font-weight: bold;
+}
 .gce-list-title {
  font-size:130%;   
 }
