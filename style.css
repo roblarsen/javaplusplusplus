@@ -372,6 +372,7 @@ color: #404040;
   .bolder {font-weight: bolder;}
   .entry-content p img {
     border:1px solid #666;  
+    display:inline-block;
   }
 
   p { margin: 0 0 20px 0; }
