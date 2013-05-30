@@ -123,3 +123,13 @@ if ( !function_exists( 'st_header_scripts' ) ) {
     $javascripts .= wp_enqueue_script('jppp',get_bloginfo('stylesheet_directory').'/jppp.js',array('jquery','move','swipe'),'1.2.3',true);
    echo apply_filters ('child_add_javascripts',$javascripts);                    }
 }
+
+add_filter( 'twitter_cards_properties', 'twitter_custom' );
+
+  function twitter_custom( $twitter_card ) {
+    if ( is_array( $twitter_card ) ) {
+      $twitter_card['creator'] = '@robreact';
+      $twitter_card['creator:id'] = '7579292';
+    }
+    return $twitter_card;
+  }
