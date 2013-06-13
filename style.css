@@ -1021,18 +1021,18 @@ a.button.gray span.btn_caption {
 
 /* Needs RWD Check */
 
-#respond {margin:0px;float:left;padding-right:5px; padding-left:5px;border-top: 1px solid #dbdbdb;padding-top: 10px;width:auto;}
+#respond {margin:0px;padding-right:5px; padding-left:5px;border-top: 1px solid #dbdbdb;padding-top: 10px;width:auto;}
 
 #respond input[type=text] { width:300px; margin-right:20px; }
 #respond textarea {width:550px; height:120px; padding:10px; }
-#comments { float:left; margin:0;padding-right:5px; padding-left:5px;border: 0;;width:auto;}
+#comments { margin:0;padding-right:5px; padding-left:5px;border: 0;;width:auto;}
 
 #comments h2, #respond h2 {vertical-align:top; font-size: 1em;display: block;border-bottom: 1px solid #d6d6d6;font-weight: bold;font-family:Verdana,Geneva,'DejaVu Sans',sans-serif; }
 #comments h6 {font-family: Verdana,Geneva,'DejaVu Sans',sans-serif;letter-spacing: normal;text-transform: uppercase;margin: 10px 0px;}
 #comments h6 a {vertical-align:top;}
 
 #comments .comment-meta { margin:0px 0px 20px 0px; display:block;}
-#comments .commentlist { margin:0px; float:left; list-style:none; width:100%;  }
+#comments .commentlist { margin:0px;  list-style:none; width:100%;  }
 #comments .commentlist ul { list-style:none; margin:0; padding:0; clear:both; }
 #comments .commentlist li {margin:0; padding:0;  display:block;}
 
