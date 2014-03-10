@@ -1167,6 +1167,10 @@ img.scale-with-grid {
   max-width: 100%;
   height: auto; }
 
+.flickr iframe {
+  float:left; 
+  margin:3px;
+}
       
 /* #Forms (see formalize.css)
 ================================================== */
