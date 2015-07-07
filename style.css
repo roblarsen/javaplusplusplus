@@ -1198,5 +1198,7 @@ img.scale-with-grid {
 
 @media screen 
   and (min-width: 1200px) {
-  background:url(http://diqmvuv8zy5jv.cloudfront.net/wp-content/uploads/2015/07/wasp-nest.jpg) center;
+  body {
+    background:url(http://diqmvuv8zy5jv.cloudfront.net/wp-content/uploads/2015/07/wasp-nest.jpg) center;
+  }
 }
